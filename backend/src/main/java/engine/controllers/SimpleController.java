@@ -16,9 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableAutoConfiguration
 public class SimpleController {
 
-//    @Autowired
-//    private RecommenderService recommenderService;
-
     private static final Logger logger = LoggerFactory.getLogger(SimpleController.class);
 
     @RequestMapping(value = "/hello/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -38,21 +35,5 @@ public class SimpleController {
         return response;
     }
 
-//    @RequestMapping(value = "/query/{sku}", produces = MediaType.APPLICATION_JSON_VALUE)
-//	@ResponseBody
-//	Map<String, Object> query(@PathVariable("sku") long sku) {
-//		logger.info("processing request");
-//
-//        Map<String, Object> response = new HashMap<String, Object>();
-//        try {
-////        	List<Article> articles = recommenderService.recommend(sku);
-////        	response.put("result", articles);
-//            response.put("status", "success");
-//        } catch (Exception e) {
-//            logger.error("Error occurred while trying to process api request", e);
-//            response.put("status", "fail");
-//        }
-//
-//        return response;
-//    }
+
 }

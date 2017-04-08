@@ -9,8 +9,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 @EnableAutoConfiguration
-//@EnableJpaRepositories (basePackageClasses = {ArticleRepository.class})
-//@EntityScan (basePackages = {"engine.entities"})
 @SpringBootApplication(scanBasePackages={"engine"})
 public class Application {
 	
@@ -18,14 +16,14 @@ public class Application {
     	SpringApplication.run(Application.class, args);
     } 
     
-//    @Bean
-//    public WebMvcConfigurer corsConfigurer() {
-//        return new WebMvcConfigurerAdapter() {
-//            @Override
-//            public void addCorsMappings(CorsRegistry registry) {
-//                registry.addMapping("/**").allowedOrigins("http://www.test-cors.org").allowedOrigins("201.159.114.71");
-//            }
-//        };
-//    }
+    @Bean
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurerAdapter() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**").allowedOrigins("*");
+            }
+        };
+    }
     
 }
