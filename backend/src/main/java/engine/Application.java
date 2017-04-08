@@ -23,7 +23,7 @@ public class Application {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**").allowedOrigins("http://www.test-cors.org");
+                registry.addMapping("/**").allowedOrigins("http://www.test-cors.org").allowedOrigins("201.159.114.71");
             }
         };
     }
