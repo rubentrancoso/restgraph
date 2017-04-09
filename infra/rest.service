@@ -1,0 +1,8 @@
+[Unit]
+Description=VanhackathonServer
+
+[Service]
+Type=simple
+User=rest
+Group=rest
+ExecStart=/bin/nohup /opt/jdk1.8.0_121/bin/java -jar /opt/server/server.jar
