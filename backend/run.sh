@@ -1,2 +1,2 @@
 #!/bin/bash
-java -jar server.jar
+java -jar /home/baduga/source/vanhackathon2017/backend/server.jar
