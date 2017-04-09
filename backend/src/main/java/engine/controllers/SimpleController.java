@@ -25,7 +25,7 @@ public class SimpleController {
 
         Map<String, Object> response = new HashMap<String, Object>();
         try {
-        	response.put("result","hello " + name);
+        	response.put("result","Hello " + name);
             response.put("status", "success");
         } catch (Exception e) {
             logger.error("Error occurred while trying to process api request", e);
