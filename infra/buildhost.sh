@@ -38,6 +38,8 @@ sudo sed -i '/#dbms.connectors.default_advertised_address=localhost/a dbms.conne
 
 sudo firewall-cmd --set-default-zone=public
 sudo firewall-cmd --permanent --zone=public --change-interface=eth0
+sudo firewall-cmd --zone=public --add-port=80/tcp --permanent
+sudo firewall-cmd --zone=public --add-port=443/tcp --permanent
 sudo firewall-cmd --zone=public --add-port=7474/tcp --permanent
 sudo firewall-cmd --zone=public --add-port=7687/tcp --permanent
 sudo firewall-cmd --reload
