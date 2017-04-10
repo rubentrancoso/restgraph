@@ -44,10 +44,12 @@ sudo firewall-cmd --reload
 sudo firewall-cmd --permanent --zone=public --list-all
 
 
-sudo systemctl enable neo4j
+sudo systemctl enable neo4jhttps://github.com/rubentrancoso/restgraph.git
 sudo systemctl start neo4j
 sudo systemctl status neo4j
 
 curl -sSL https://agent.digitalocean.com/install.sh | sh
+
+sudo git clone https://github.com/rubentrancoso/restgraph.git
 
 sudo updatedb
