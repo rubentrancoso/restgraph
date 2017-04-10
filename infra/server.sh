@@ -7,7 +7,8 @@ rm -rf apache-maven-3.3.9-bin.tar.gz
 
 sudo cat <<EOF>  /etc/profile.d/maven.sh
 export M2_HOME=/opt/maven
-export PATH=${M2_HOME}/bin:${PATH}
+export M2=\$M2_HOME/bin
+export PATH=\$M2:${PATH}
 EOF
 
 source /etc/profile.d/maven.sh
