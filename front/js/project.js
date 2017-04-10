@@ -18,7 +18,7 @@ angular.module('project', ['ngRoute'])
  
 .controller('ProjectController',
   function($scope, $http) {
-    var url = "http://192.241.130.162:8080/api/hello/folks";
+    var url = "http://api.doteva.com:8080/api/hello/folks";
 
     $http.get(url)
     .then(function(response) {
