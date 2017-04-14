@@ -1,4 +1,5 @@
 #!/bin/bash
+cd html
 case $( uname -s ) in
 Linux) python -m SimpleHTTPServer 80
 ;;
