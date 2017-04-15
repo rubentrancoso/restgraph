@@ -12,6 +12,9 @@ in 20 minutes install with arround 3 scripts you have a CentOS 7 box setup with:
 ### on a fesh CentOS 7 create a buildhost.sh file with the same content of this same file from this repository
 ```
 # vi buildhost.sh
+
+- copy the content from restgraph/infra/buildhost.sh into it
+
 # chmod +x buildhost.sh
 # ./buildhost.sh
 ```
