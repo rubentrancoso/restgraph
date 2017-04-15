@@ -86,8 +86,10 @@ PrivateTmp=true
 WantedBy=multi-user.target
 EOT
 
-systemctl enable nginx.service
-systemctl start nginx.service
+sudo yes | cp -rf /root/restgraph/infra/nginx/nginx.conf /etc/nginx/nginx.conf
+
+sudo systemctl enable nginx.service
+sudo systemctl start nginx.service
 /usr/sbin/nginx -c /etc/nginx/nginx.conf
-systemctl status nginx.service
-nginx -V
+sudo systemctl status nginx.service
+sudo nginx -V
