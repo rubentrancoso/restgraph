@@ -38,7 +38,7 @@ Change the hostnames according to your environment
 - white neo4j boilerplate
 - integrate scripts and extenalize hardcoded parameters
 
-## for later
+### for later
 
 https://maxdemarzi.com/2014/03/10/its-over-9000-neo4j-on-websockets/
 
