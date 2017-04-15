@@ -22,9 +22,9 @@ total time to run: 9 min
 # ./server.sh
 # ./nginx.sh
 ```
-total time to run 2 and 9 min
+total time to run: 2 and 9 min
 
-## from restgraph/front run
+### from restgraph/front run
 ```
 # ./install.sh
 ```
@@ -32,7 +32,7 @@ enjoy!
 
 Change the hostnames according to your environment
 
-## Roadmap
+### Roadmap
 
 - automate certificate creationg and installation
 - white neo4j boilerplate
