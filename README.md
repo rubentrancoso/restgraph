@@ -11,22 +11,22 @@ in 20 minutes install with arround 3 scripts you have a CentOS 7 box setup with
 
 ### on a fesh CentOS 7 create a buildhost.sh file with the same content of this same file from this repository
 ```
-#chmod +x buildhost.sh
-./buildhost.sh
+# vi buildhost.sh
+# chmod +x buildhost.sh
+# ./buildhost.sh
 ```
 total time to run: 9 min
 
 ### from restgraph/infra/ run
 ```
-./server.sh
-and
-./nginx.sh
+# ./server.sh
+# ./nginx.sh
 ```
 total time to run 2 and 9 min
 
 ## from restgraph/front run
 ```
-./install.sh
+# ./install.sh
 ```
 enjoy!
 
