@@ -34,9 +34,11 @@ Change the hostnames according to your environment
 
 ## Roadmap
 
-automate certificate creationg and installation- 
-white neo4j boilerplate- 
-integrate scripts and extenalize hardcoded parameters- 
+- automate certificate creationg and installation
+- white neo4j boilerplate
+- integrate scripts and extenalize hardcoded parameters
+
+## for later
 
 https://maxdemarzi.com/2014/03/10/its-over-9000-neo4j-on-websockets/
 
