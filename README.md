@@ -13,7 +13,7 @@ in 20 minutes install with arround 3 scripts you have a CentOS 7 box setup with:
 ```
 # vi buildhost.sh
 ```
-- copy content from [buildhost.sh](infra/buildhost.sh) into 
+copy content from [buildhost.sh](infra/buildhost.sh) into 
 ```
 # chmod +x buildhost.sh
 # ./buildhost.sh
