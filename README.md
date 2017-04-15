@@ -13,7 +13,7 @@ in 20 minutes install with arround 3 scripts you have a CentOS 7 box setup with:
 ```
 # vi buildhost.sh
 
-- copy the content from restgraph/infra/buildhost.sh into it
+- copy the content from https://github.com/rubentrancoso/restgraph/blob/master/infra/buildhost.sh into it
 
 # chmod +x buildhost.sh
 # ./buildhost.sh
