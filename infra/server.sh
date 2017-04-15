@@ -26,10 +26,10 @@ sudo mkdir /opt/server
 sudo cp -R config /opt/server
 sudo cp -R target/server-0.0.1-SNAPSHOT.jar /opt/server/server.jar
 
-sudo firewall-cmd --zone=public --add-port=8080/tcp --permanent
-sudo firewall-cmd --reload
-sudo firewall-cmd --permanent --zone=public --list-all
-sudo systemctl restart firewalld.service
+# sudo firewall-cmd --zone=public --add-port=8080/tcp --permanent
+# sudo firewall-cmd --reload
+# sudo firewall-cmd --permanent --zone=public --list-all
+# sudo systemctl restart firewalld.service
 
 sudo systemctl start rest.service
 sudo systemctl status rest.service
