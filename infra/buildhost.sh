@@ -40,7 +40,7 @@ sudo firewall-cmd --set-default-zone=public
 sudo firewall-cmd --permanent --zone=public --change-interface=eth0
 sudo firewall-cmd --zone=public --add-port=80/tcp --permanent
 sudo firewall-cmd --zone=public --add-port=443/tcp --permanent
-sudo firewall-cmd --zone=public --add-port=7474/tcp --permanent
+# sudo firewall-cmd --zone=public --add-port=7474/tcp --permanent
 sudo firewall-cmd --zone=public --add-port=7687/tcp --permanent
 sudo firewall-cmd --reload
 sudo firewall-cmd --permanent --zone=public --list-all
