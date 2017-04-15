@@ -1,4 +1,4 @@
-# Spring boot rest + Neo4j
+# Spring boot rest + Angular + Neo4j
 Simple Rest with angularjs and neo4j
                         
 in 20 minutes install with arround 3 scripts you have a CentOS 7 box setup with:
