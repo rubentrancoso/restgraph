@@ -3,7 +3,7 @@ GITEMAIL=rubentrancoso@gmail.com
 GITNAME="Ruben Trancoso"
 
 # for production comment the line bellow
-TESTECERT="--test-cert"
+TESTCERT="--test-cert"
 CERTBOTEMAIL=rubentrancoso@gmail.com
 CERTDOMAIN=doteva.com
 
