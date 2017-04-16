@@ -52,8 +52,10 @@ sudo systemctl enable neo4j
 sudo systemctl start neo4j
 sudo systemctl status neo4j
 
-curl -sSL https://agent.digitalocean.com/install.sh | sh
+# curl -sSL https://agent.digitalocean.com/install.sh | sh
 
-sudo git clone https://github.com/rubentrancoso/restgraph.git
+# sudo git clone https://github.com/rubentrancoso/restgraph.git
 
 sudo updatedb
+
+echo -e "BUILDHOST ENDED"

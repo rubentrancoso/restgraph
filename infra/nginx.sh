@@ -109,3 +109,7 @@ sudo systemctl start nginx.service
 /usr/sbin/nginx -c /etc/nginx/nginx.conf
 sudo systemctl status nginx.service
 sudo nginx -V
+
+cd ~
+
+echo -e "NGINX ENDED"

@@ -13,13 +13,14 @@ EOF
 
 source /etc/profile.d/maven.sh
 
+cd infra
 adduser rest
 sudo cp rest.service /usr/lib/systemd/system/
 sudo systemctl enable rest.service
 sudo systemctl daemon-reload
 sudo systemctl stop rest.service
 
-cd ./../backend
+cd ../backend
 git pull origin master
 mvn clean install
 sudo mkdir /opt/server
@@ -32,3 +33,7 @@ sudo systemctl status rest.service
 git config --global user.email $GITEMAIL
 git config --global user.name $GITNAME
 git status
+
+cd ~
+
+echo -e "SERVER ENDED"
