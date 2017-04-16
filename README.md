@@ -10,13 +10,13 @@ in 20 minutes install with one script you have a CentOS 7 box setup with:
    
 ## Installation procedure  
 
-### on a fesh CentOS 7
+### on a fesh CentOS 7 from /root
 ```
 # yum install -y git 
 # git clone https://github.com/rubentrancoso/restgraph.git
 # cd restgraph
 ```
-FIRST revise PARAMETERS file and than
+REVIEW PARAMETERS file and than
 ```
 # ./install.sh
 ```
@@ -27,9 +27,7 @@ Change the hostnames according to your environment
 
 ### Roadmap
 
-- automate certificate creationg and installation
 - write neo4j boilerplate
-- integrate scripts and extenalize hardcoded parameters
 
 ### for later
 
