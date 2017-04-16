@@ -27,9 +27,7 @@ Change the hostnames according to your environment
 
 ### Roadmap
 
-- automate certificate creationg and installation
 - write neo4j boilerplate
-- integrate scripts and extenalize hardcoded parameters
 
 ### for later
 
