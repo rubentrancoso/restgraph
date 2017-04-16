@@ -23,6 +23,7 @@ total time to run: 9 min
 ### from restgraph/infra/ run
 ```
 # ./server.sh
+# ./cerbot/getcerts.sh
 # ./nginx.sh
 ```
 total time to run: 2 and 9 min
