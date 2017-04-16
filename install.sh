@@ -28,6 +28,6 @@ locate
 cd restgraph/ 
 . "$DIR/infra/nginx.sh"
 locate
-cd restgraph/
+ cd restgraph/
 . "$DIR/front/install.sh"
 
