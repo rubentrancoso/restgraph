@@ -23,6 +23,9 @@ enabled=1
 gpgcheck=1
 EOF
 
+sudo yum install epel-release -y
+sudo yum install certbot -y
+
 sudo yum install neo4j -y
 sudo rpm --nodeps -e java-1.8.0-openjdk-headless
 

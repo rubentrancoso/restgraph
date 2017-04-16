@@ -56,6 +56,7 @@ cd nginx
 --with-http_realip_module               \
 --without-http_scgi_module              \
 --without-http_uwsgi_module             \
+--with-http_v2_module                   \
 --with-openssl=/usr/local/src/openssl-$openSSLVersion/	 \
 --with-openssl-opt=enable-tlsext        \
 --add-module=./../../nginx-modules/ngx_http_substitutions_filter_module
@@ -86,7 +87,13 @@ PrivateTmp=true
 WantedBy=multi-user.target
 EOT
 
-sudo yes | cp -rf /root/restgraph/infra/nginx/nginx.conf /etc/nginx/nginx.conf
+sudo yes | cp -rf /root/restgraph/infra/nginx/conf/* /etc/nginx/
+
+cd ..
+
+sudo rm -rf nginx-modules
+sudo rm -rf nginx-src
+sudo rm -rf openssl-1.0.1g.tar.gz
 
 sudo systemctl enable nginx.service
 sudo systemctl start nginx.service
