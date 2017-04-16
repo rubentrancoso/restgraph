@@ -89,6 +89,15 @@ EOT
 
 sudo yes | cp -rf /root/restgraph/infra/nginx/conf/* /etc/nginx/
 
+sudo sed -i.bak s/%CERTDOMAIN%/$CERTDOMAIN/g /etc/nginx/conf/conf.d/api.conf
+sudo sed -i.bak s/%APIDOMAIN%/$APIDOMAIN/g /etc/nginx/conf/conf.d/api.conf
+
+sudo sed -i.bak s/%CERTDOMAIN%/$CERTDOMAIN/g /etc/nginx/conf/conf.d/front.conf
+sudo sed -i.bak s/%FRONTDOMAIN%/$FRONTDOMAIN/g /etc/nginx/conf/conf.d/front.conf
+
+sudo sed -i.bak s/%CERTDOMAIN%/$CERTDOMAIN/g /etc/nginx/conf/conf.d/neo4j.conf
+sudo sed -i.bak s/%NEO4JDOMAIN%/$NEO4JDOMAIN/g /etc/nginx/conf/conf.d/neo4j.conf
+
 cd ..
 
 sudo rm -rf nginx-modules

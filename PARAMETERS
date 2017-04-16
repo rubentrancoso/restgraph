@@ -1,0 +1,14 @@
+
+GITEMAIL=rubentrancoso@gmail.com
+GITNAME="Ruben Trancoso"
+
+# for production comment the line bellow
+TESTECERT="--test-cert"
+CERTBOTEMAIL=rubentrancoso@gmail.com
+CERTDOMAIN=doteva.com
+
+APIDOMAIN=api.$CERTDOMAIN
+NEO4JDOMAIN=neo.$CERTDOMAIN
+FRONTDOMAIN=angular.$CERTDOMAIN
+
+CERTDOMAINS=$CERTDOMAIN,$APIDOMAIN,$NEO4JDOMAIN,$FRONTDOMAIN

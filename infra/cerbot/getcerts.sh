@@ -1,4 +1,11 @@
 #!/bin/bash
-certbot certonly --test-cert -n --standalone --email rubentrancoso@gmail.com --agree-tos -d api.doteva.com
-certbot certonly --test-cert -n --standalone --email rubentrancoso@gmail.com --agree-tos -d angular.doteva.com 
-certbot certonly --test-cert -n --standalone --email rubentrancoso@gmail.com --agree-tos -d neo.doteva.com
+
+IFS=',' read -ra ADDR <<< "$CERTDOMAINS"
+for i in "${ADDR[@]}"; do
+    DOMAINS=$DOMAINS" -d "$i
+done
+echo -e $DOMAINS
+
+certbot certonly $TESTCERT -n --standalone --email $CERTBOTEMAIL --agree-tos --expand $DOMAINS 
+
+# certbot certonly --test-cert -n --standalone --email $CERTBOTEMAIL --agree-tos -d api.doteva.com
