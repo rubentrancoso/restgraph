@@ -10,7 +10,7 @@ in 20 minutes install with one script you have a CentOS 7 box setup with:
    
 ## Installation procedure  
 
-### on a fesh CentOS 7 create a buildhost.sh file with the same content of this same file from this repository
+### on a fesh CentOS 7
 ```
 # yum install -y git 
 # git clone https://github.com/rubentrancoso/restgraph.git
