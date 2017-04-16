@@ -28,6 +28,8 @@ Change the hostnames according to your environment
 ### Roadmap
 
 - write neo4j boilerplate
+- autorenew certificate
+- api authentication
 
 ### for later
 
