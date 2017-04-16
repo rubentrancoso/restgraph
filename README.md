@@ -30,9 +30,14 @@ Change the hostnames according to your environment
 - fix websocket communication with neo4j
 - write neo4j boilerplate
 - autorenew certificate
-- api authentication
+- api authentication (Oauth)
 
 ### for later
+
+- spring cloud contract
+- fix workflow when changing remote files
+- react
+- MS architecture
 
 https://maxdemarzi.com/2014/03/10/its-over-9000-neo4j-on-websockets/
 
