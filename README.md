@@ -11,27 +11,12 @@ in 20 minutes install with arround 4 scripts you have a CentOS 7 box setup with:
 
 ### on a fesh CentOS 7 create a buildhost.sh file with the same content of this same file from this repository
 ```
-# vi buildhost.sh
-```
-copy content from [buildhost.sh](infra/buildhost.sh) into 
-```
-# chmod +x buildhost.sh
-# ./buildhost.sh
-```
-total time to run: 9 min
-
-### from restgraph/infra/ run
-```
-# ./server.sh
-# ./cerbot/getcerts.sh
-# ./nginx.sh
-```
-total time to run: 2 and 9 min
-
-### from restgraph/front run
-```
+# yum install -y git 
+# git clone https://github.com/rubentrancoso/restgraph.git
+# cd restgraph
 # ./install.sh
 ```
+
 enjoy!
 
 Change the hostnames according to your environment
