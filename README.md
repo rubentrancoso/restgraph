@@ -27,6 +27,7 @@ Change the hostnames according to your environment
 
 ### Roadmap
 
+- fix websocket communication with neo4j
 - write neo4j boilerplate
 - autorenew certificate
 - api authentication
