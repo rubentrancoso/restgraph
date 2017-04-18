@@ -28,7 +28,7 @@ Change the hostnames according to your environment
 ### Roadmap
 
 - enable acme-challenge
-- autorenew certificate
+- ~~autorenew certificate~~
 - ~~fix websocket communication with neo4j~~
 - write neo4j boilerplate
 - api authentication (Oauth)
