@@ -20,7 +20,7 @@ locate
 . "$DIR/infra/buildhost.sh"
 locate
 cd restgraph/
-. "$DIR/infra/getcerts.sh"
+. "$DIR/infra/certsget.sh"
 locate
 cd restgraph/ 
 . "$DIR/infra/server.sh"
