@@ -16,7 +16,7 @@ in 20 minutes install with one script you have a CentOS 7 box setup with:
 # git clone https://github.com/rubentrancoso/restgraph.git
 # cd restgraph
 ```
-REVIEW PARAMETERS file and than
+REVIEW PARAMETERS file and then
 ```
 # ./install.sh
 ```
