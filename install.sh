@@ -29,5 +29,5 @@ cd restgraph/
 . "$DIR/infra/nginx.sh"
 locate
  cd restgraph/
-. "$DIR/front/install.sh"
+. "$DIR/frontend/install.sh"
 
