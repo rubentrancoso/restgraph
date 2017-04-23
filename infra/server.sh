@@ -25,7 +25,7 @@ git pull origin develop
 mvn clean install
 sudo mkdir /opt/server
 sudo cp -R rest-front/config /opt/server
-sudo cp -R rest-front/target/server-0.0.1-SNAPSHOT.jar /opt/server/server.jar
+sudo cp -R rest-front/target/rest-front-0.0.1-SNAPSHOT.jar /opt/server/server.jar
 
 sudo systemctl start rest.service
 sudo systemctl status rest.service
