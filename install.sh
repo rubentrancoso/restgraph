@@ -40,3 +40,9 @@ cd ~
 cd restgraph/
 . "$DIR/frontend/install.sh"
 
+locate
+cd ~
+cd restgraph/
+. "$DIR/infra/start-services.sh"
+
+
