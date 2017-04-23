@@ -106,7 +106,7 @@ sudo rm -rf nginx-src
 sudo rm -rf openssl-1.0.1g.tar.gz
 
 sudo systemctl enable nginx.service
-sudo systemctl start nginx.service
+# sudo systemctl start nginx.service
 /usr/sbin/nginx -c /etc/nginx/nginx.conf
 sudo systemctl status nginx.service
 sudo nginx -V
