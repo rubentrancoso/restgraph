@@ -11,14 +11,14 @@ certbot certonly $TESTCERT -n --standalone --email $CERTBOTEMAIL --agree-tos --e
 # certbot certonly --test-cert -n --standalone --email $CERTBOTEMAIL --agree-tos -d api.doteva.com
 
 rm -rf /var/lib/neo4j/certificates/neo4j.*
-cp -s /etc/letsencrypt/live/$CERTDOMAIN/cert.pem /var/lib/neo4j/certificates/neo4j.cert
-cp -s /etc/letsencrypt/live/$CERTDOMAIN/privkey.pem /var/lib/neo4j/certificates/neo4j.key
+cp /etc/letsencrypt/live/$CERTDOMAIN/cert.pem /var/lib/neo4j/certificates/neo4j.cert
+cp /etc/letsencrypt/live/$CERTDOMAIN/privkey.pem /var/lib/neo4j/certificates/neo4j.key
 
 sudo cat <<EOF>  /opt/server/certsrenew.sh
 #!/bin/bash
 rm -rf /var/lib/neo4j/certificates/neo4j.*
-cp -s /etc/letsencrypt/live/$CERTDOMAIN/cert.pem /var/lib/neo4j/certificates/neo4j.cert
-cp -s /etc/letsencrypt/live/$CERTDOMAIN/privkey.pem /var/lib/neo4j/certificates/neo4j.key
+cp /etc/letsencrypt/live/$CERTDOMAIN/cert.pem /var/lib/neo4j/certificates/neo4j.cert
+cp /etc/letsencrypt/live/$CERTDOMAIN/privkey.pem /var/lib/neo4j/certificates/neo4j.key
 service nginx restart
 EOF
 

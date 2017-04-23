@@ -49,7 +49,7 @@ sudo firewall-cmd --permanent --zone=public --list-all
 
 
 sudo systemctl enable neo4j
-sudo systemctl start neo4j
+# sudo systemctl start neo4j
 sudo systemctl status neo4j
 
 # curl -sSL https://agent.digitalocean.com/install.sh | sh
