@@ -4,7 +4,7 @@ Simple Rest with angularjs and neo4j
 in 20 minutes install with one script you have a CentOS 7 box setup with:
 
    - [x] Nginx on port 80 443  (angular.doteva.com) serving a angular front
-   - [x] Neo4J database ready  (neo.doteva.com) change password after install 
+   - [x] Neo4J database ready through SPI (neo.doteva.com) change password after install 
    - [x] Rest Server ready     (api.doteva.com/api/hello/folks)
    - [x] SSL Certificates installed
    
