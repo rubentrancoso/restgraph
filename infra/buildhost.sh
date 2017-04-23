@@ -10,6 +10,7 @@ sudo systemctl start firewalld.service
 sudo systemctl status firewalld.service
 sudo yum update -y
 sudo yum install git mlocate telnet dos2unix -y
+yum remove postfix -y
 
 cd /tmp
 sudo wget http://debian.neo4j.org/neotechnology.gpg.key
