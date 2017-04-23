@@ -15,7 +15,10 @@ in 20 minutes install with one script you have a CentOS 7 box setup with:
 # yum install -y git 
 # git clone https://github.com/rubentrancoso/restgraph.git
 # cd restgraph
+# git checkout origin/develop
 ```
+yum install -y git; git clone https://github.com/rubentrancoso/restgraph.git; cd restgraph; git checkout develop; git branch
+
 REVIEW PARAMETERS file and then
 ```
 # ./install.sh
