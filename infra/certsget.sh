@@ -19,7 +19,8 @@ sudo cat <<EOF>  /opt/server/certsrenew.sh
 rm -rf /var/lib/neo4j/certificates/neo4j.*
 cp /etc/letsencrypt/live/$CERTDOMAIN/cert.pem /var/lib/neo4j/certificates/neo4j.cert
 cp /etc/letsencrypt/live/$CERTDOMAIN/privkey.pem /var/lib/neo4j/certificates/neo4j.key
-# service nginx restart
+service nginx restart
+service neo4j restart
 EOF
 
 sudo cat <<EOF>  /etc/cron.daily/certscron.sh
