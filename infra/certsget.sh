@@ -9,6 +9,7 @@ echo -e $DOMAINS
 certbot certonly $TESTCERT -n --standalone --email $CERTBOTEMAIL --agree-tos --expand $DOMAINS 
 
 # certbot certonly --test-cert -n --standalone --email $CERTBOTEMAIL --agree-tos -d api.doteva.com
+mkdir /var/lib/neo4j/certificates
 
 rm -rf /var/lib/neo4j/certificates/neo4j.*
 cp /etc/letsencrypt/live/$CERTDOMAIN/cert.pem /var/lib/neo4j/certificates/neo4j.cert
