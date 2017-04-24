@@ -42,9 +42,10 @@ Change the hostnames according to your environment
 ### Other future topics
 
 - spring cloud contract
-- fix workflow when changing remote files
+- ~~fix workflow when changing remote files~~
 - reactjs
 - micro services architecture
+- custom neo4j database path
 
 https://maxdemarzi.com/2014/03/10/its-over-9000-neo4j-on-websockets/
 
