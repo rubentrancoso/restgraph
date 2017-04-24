@@ -5,7 +5,7 @@ in 20 minutes install with one script you have a CentOS 7 box setup with:
 
    - [x] Nginx on port 80 443  (http://angularjs.doteva.com) serving a angular front
    - [x] Neo4J database ready through SPI (http://neo4j.doteva.com) change password after install 
-   - [x] Rest Server ready     (http://restapi.doteva.com.doteva.com/api/hello/folks)
+   - [x] Rest Server ready     (http://restapi.doteva.com/api/hello/folks)
    - [x] SSL Certificates installed
    
 ## Installation procedure  
