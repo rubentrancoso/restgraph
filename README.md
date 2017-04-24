@@ -4,7 +4,7 @@ Simple Rest with angularjs and neo4j
 in 20 minutes install with one script you have a CentOS 7 box setup with:
 
    - [x] Nginx on port 80 443  (angular.doteva.com) serving a angular front
-   - [x] Neo4J database ready  (neo.doteva.com) change password after install 
+   - [x] Neo4J database ready through SPI (neo.doteva.com) change password after install 
    - [x] Rest Server ready     (api.doteva.com/api/hello/folks)
    - [x] SSL Certificates installed
    
@@ -15,13 +15,16 @@ in 20 minutes install with one script you have a CentOS 7 box setup with:
 # yum install -y git 
 # git clone https://github.com/rubentrancoso/restgraph.git
 # cd restgraph
-# git checkout origin/develop
+# git checkout develop
+# git branch
 ```
-yum install -y git; git clone https://github.com/rubentrancoso/restgraph.git; cd restgraph; git checkout develop; git branch
-
 REVIEW PARAMETERS file and then
 ```
 # ./install.sh
+```
+all commands in one line
+```
+# yum install -y git; git clone https://github.com/rubentrancoso/restgraph.git; cd restgraph; git checkout develop; git branch; ./install.sh
 ```
 
 enjoy!

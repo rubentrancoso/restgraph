@@ -10,7 +10,7 @@ sudo systemctl start firewalld.service
 sudo systemctl status firewalld.service
 sudo yum update -y
 sudo yum install git mlocate telnet dos2unix -y
-yum remove postfix -y
+sudo yum remove postfix -y
 
 cd /tmp
 sudo wget http://debian.neo4j.org/neotechnology.gpg.key
@@ -50,7 +50,7 @@ sudo firewall-cmd --permanent --zone=public --list-all
 
 
 sudo systemctl enable neo4j
-sudo systemctl start neo4j
+# sudo systemctl start neo4j
 sudo systemctl status neo4j
 
 # curl -sSL https://agent.digitalocean.com/install.sh | sh

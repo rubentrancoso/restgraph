@@ -5,4 +5,5 @@ Description=Rest Server
 Type=simple
 User=rest
 Group=rest
+WorkingDirectory=/opt/server
 ExecStart=/bin/nohup /usr/java/jdk1.8.0_60/bin/java -jar /opt/server/server.jar

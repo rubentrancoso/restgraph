@@ -16,33 +16,6 @@ DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 
 . "$DIR/PARAMETERS"
-
 locate
-. "$DIR/infra/buildhost.sh"
-
-locate
-cd ~
-cd restgraph/
-. "$DIR/infra/rest-server.sh"
-
-locate
-cd ~
-cd restgraph/
 . "$DIR/infra/certsget.sh"
-
-locate
-cd ~
-cd restgraph/ 
-. "$DIR/infra/nginx.sh"
-
-locate
-cd ~
-cd restgraph/
-. "$DIR/frontend/install.sh"
-
-locate
-cd ~
-cd restgraph/
-. "$DIR/infra/start-services.sh"
-
 
